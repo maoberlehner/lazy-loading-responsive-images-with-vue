@@ -1,0 +1,33 @@
+{
+  "name": "lazy-loading-responsive-images-with-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint:scripts": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:styles": "stylelint '+(assets|components|layouts|pages)/**/*.+(scss|vue)'",
+    "lint": "yarn run lint:scripts && yarn run lint:styles"
+  },
+  "dependencies": {
+    "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.5",
+    "@avalanche/object-container": "^4.0.0-alpha.8",
+    "@avalanche/object-vertical-spacing": "^4.0.0-alpha.5",
+    "@avalanche/setting-colors": "^4.0.0-alpha.5",
+    "@avalanche/setting-spacings": "^4.0.0-alpha.6",
+    "@vue/cli-plugin-babel": "^3.0.0-rc.8",
+    "@vue/cli-service": "^3.0.0-rc.8",
+    "node-sass": "^4.9.2",
+    "node-sass-magic-importer": "^5.2.0",
+    "reset-css": "^4.0.1",
+    "sass-loader": "^7.0.3",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@avalanche/eslint-config": "^3.0.0",
+    "@avalanche/stylelint-config": "^1.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.8",
+    "eslint-plugin-import": "^2.13.0",
+    "stylelint": "^9.4.0"
+  }
+}
