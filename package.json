@@ -20,6 +20,7 @@
     "lozad": "^1.6.0",
     "node-sass": "^4.9.2",
     "node-sass-magic-importer": "^5.2.0",
+    "prerender-spa-plugin": "^3.2.1",
     "reset-css": "^4.0.1",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16"
