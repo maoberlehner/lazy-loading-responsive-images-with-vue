@@ -53,15 +53,3 @@ h5 {
 h6 {
   font-size: 1.125em;
 }
-
-// 1. Make images adapt to the available
-//    space (responsive images).
-// 2. Remove the little space at the bottom
-//    of images.
-img {
-  max-width: 100%; // 1
-  max-height: 100%; // 1
-  width: auto; // 1
-  height: auto; // 1
-  vertical-align: middle; // 2
-}

@@ -17,6 +17,7 @@
     "@avalanche/setting-spacings": "^4.0.0-alpha.6",
     "@vue/cli-plugin-babel": "^3.0.0-rc.8",
     "@vue/cli-service": "^3.0.0-rc.8",
+    "lozad": "^1.6.0",
     "node-sass": "^4.9.2",
     "node-sass-magic-importer": "^5.2.0",
     "reset-css": "^4.0.1",

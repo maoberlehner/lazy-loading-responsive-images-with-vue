@@ -23,11 +23,14 @@
         dolore magna aliquyam erat, sed diam voluptua. Ergren, no sea
         takimata sanctus est Lorem ipsum dolor sit amet.
       </p>
-      <img
-        :srcset="'https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/1.jpg 2x'"
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/1.jpg"
+      <app-image
+        :width="500"
+        :height="667"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_10,w_500,e_blur:1500/v1532772050/blog/demos/lazy-loading/1.jpg"
+        lazy-src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/1.jpg"
+        lazy-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/1.jpg 2x"
         alt=""
-      >
+      />
     </section>
 
     <section class="o-content">
@@ -47,11 +50,13 @@
         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
         erat, sed diam voluptua. At vero eos et accusam et.
       </p>
-      <img
-        :srcset="'https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/2.jpg 2x'"
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/2.jpg"
+      <app-image
+        :width="500"
+        :height="375"
+        lazy-src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/2.jpg"
+        lazy-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/2.jpg 2x"
         alt=""
-      >
+      />
     </section>
 
     <section class="o-content">
@@ -68,11 +73,14 @@
         dolore magna aliquyam erat, sed diam voluptua. Ergren, no sea
         takimata sanctus est Lorem ipsum dolor sit amet.
       </p>
-      <img
-        :srcset="'https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/3.jpg 2x'"
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/3.jpg"
+      <app-image
+        :width="500"
+        :height="281"
+        background-color="#b0897e"
+        lazy-src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/3.jpg"
+        lazy-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/3.jpg 2x"
         alt=""
-      >
+      />
     </section>
 
     <section class="o-content">
@@ -92,18 +100,26 @@
         dolore magna aliquyam erat, sed diam voluptua. Ergren, no sea
         takimata sanctus est Lorem ipsum dolor sit amet.
       </p>
-      <img
-        :srcset="'https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/4.jpg 2x'"
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/4.jpg"
+      <app-image
+        :width="500"
+        :height="889"
+        background-color="#8ea4bf"
+        lazy-src="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_500/v1532772050/blog/demos/lazy-loading/4.jpg"
+        lazy-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,g_center,q_auto,w_1000/v1532772050/blog/demos/lazy-loading/4.jpg 2x"
         alt=""
-      >
+      />
     </section>
   </div>
 </template>
 
 <script>
+import AppImage from './components/AppImage.vue';
+
 export default {
   name: `App`,
+  components: {
+    AppImage,
+  },
 };
 </script>
 
